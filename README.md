@@ -1,4 +1,4 @@
-# Explaining Neural NLP Models To Understand Students' Career Choices"
+# Explaining Neural NLP Models for the Joint Analysis of Open- and Closed-Ended Survey Answers
 
 ##  1. <a name='TableofContents'></a>Table of Contents
 1. [Table of Contents](#TableofContents)
