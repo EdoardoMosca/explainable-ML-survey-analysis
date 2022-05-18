@@ -1,0 +1,84 @@
+{
+    "file_paths": {
+      "best_model_weights_file_path": "tmp/checkpoint/feat_text/regression/20210913-115927/",
+      "best_one_flow_model_weights_file_path": "tmp/checkpoint/feat_text/regression/20210928-101701/"
+    },
+
+    "main_params": {
+      "model": "regression",
+      "mode": "text&feat"
+    },
+
+    "SHAP_experiments": {
+      "sample_list": [151, 157, 119, 183],
+      "sample": 151,
+      "experiment": "SHAP_explain"
+    },
+
+    "ConceptSHAP_experiments": {
+        "n_concept": 4,
+        "num_nearest_neighs": 100,
+        "feature_model_pretrain": true,
+        "concept_model_trained": true,
+        "thres_array": [0.1]
+    },
+
+    "hyper_params_feat_text_classifier": {
+        "regularization": 0.00,
+        "batch_norm": false,
+        "dropout": true,
+        "dropout_prop": 0.05,
+        "num_layers": 4,
+        "num_pre_layers": 0,
+        "num_hidden_units": 512,
+        "learning_rate":4e-4,
+        "batch_size":2,
+        "epochs": 100
+    },
+    
+    "hyper_params_EMB_feat_text_classifier": {
+        "regularization": 0.00,
+        "batch_norm": false,
+        "dropout": true,
+        "dropout_prop": 0.25,
+        "num_layers": 4,
+        "num_pre_layers": 0,
+        "num_hidden_units": 512,
+        "learning_rate":4e-4,
+        "batch_size":4,
+        "epochs": 300,
+        "vocab_size": 999, 
+        "embbeding_dim": 8
+    },
+
+    "general_classifier_params": {
+        "metrics_classifier": "accuracy",
+        "loss_regression": "mean_absolute_error",
+        "metrics_regression": "mean_absolute_error"
+    },
+
+    "embeddings": {
+        "pretrained_model_name": "distilbert-base-uncased",
+        "BERT_embeddings_type": "mean"
+    },
+
+    "data_params": {
+        "data_size": false, 
+        "test_size": 0.15,
+        "val_size": 0.15,
+        "account_bias": false,
+        "standardize_features": false,
+        "rebalance": false,
+        "bin": true,
+        "max_sample_length": 250,
+        "min_sample_length": 2,
+        "one_hot_encode_all": false,
+        "dummy_values_text": false,
+        "dummy_values_feat": true
+    }
+}
+
+
+
+  
+

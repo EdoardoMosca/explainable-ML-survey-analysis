@@ -1,0 +1,40 @@
+
+{
+    "text_columns": ["q22career"],     
+    "label_columns": ["q20asbus","q20blbus","q20cnon","q20dgov","q20etch","q20fcoll","q20hsnon", "q20gsfor"],
+    
+    "feature_columns": {
+        "topic1": ["q9aart",	"q9bcomp", "q9cshop", "q9drobo", "q9ecamp", "q9fres", "q9geship", "q9hstart", 
+                    "q10ares", "q10bint", "q10cpay", "q10dabrd", 
+                    "q11aart", "q11bcomp", "q11ctheo", "q11ddes", "q11ebus", "q11flead", "q11ginter", 
+                    "q12abclbr", "q12bcclbr", "q12cdclbr", "q12drclbr", "q12eeclbr", "q12fnclbr", "q12gbcomr", "q12hdcomr", "q12iscomr", "q12jspcer", 
+                    "q12kcarr", "q12lspkr", "q12mbootr", "q12npresr", "q12oedrmr", "q12pidrmr", "q12qfundr", "q12rleadr", "q12sstsr",  "q12tstor", 
+                    "q12unoner", "q12vnoanr", "q13acrs", "q13bopt", "q13cnew", "q14acrs", "q14bopt", "q14cnew"],
+        "topic2": ["q15aask", "q15bgen", "q15cexp", "q15dact", "q15ebld", "q15fcon", "q15gdes", "q15hcdt", "q15idev", "q15jana", "q15ktrb", "q15llead", "q15mcomm", "q15ntake"],
+        "topic3": ["q16astar", "q16bresp", "q16churt", "q16dtrbl"],
+        "topic4": ["q23sexr", "q24aaminr", "q24basamr", "q24cafamr", "q24dlatr", "q24enhpir", "q24fwhtr", "q24other", "URM", 
+                    "q25brthyr", "q25brthyr96m", "q26cit", "q27born", "q28immi", 
+                    "q29fam", "q30aparr", "q30bsibr", "q30crelr", "q30dfrndr", "q30enoner","q32par1ed", "q34par2ed"],
+        "topic5": ["q17aexp", "q17bgive", "q17cfind", "q17ddev", "q17ecdt", "q17fsoc", "q17gfin"],
+        "topic6": ["q18asrch", "q18bgen", "q18cprom", "q18dinve", "q18edev", "q18fsell"],
+        "topic7": ["q19grad", "q19atyp1r", "q19afld1r", "q21a1y","q21b5y","q21c10y"],
+        "topic8": ["Q2CLASSN", "q3status", "q4transfer", "pmajipeds", "q5aptype", "q5bpconr", "q5cpcomp", "q6second", "q7anor", "q7bminr", "q7ccertr", "q8graduate", "q35gpa"]
+    },
+
+    "one_hot_feat": {"topic1": ["q11aart", "q11bcomp", "q11ctheo", "q11ddes", "q11ebus", "q11flead", "q11ginter"], 
+        "topic2": [], 
+        "topic3": [], 
+        "topic4": ["q23sexr", "q26cit"], 
+        "topic5": [], 
+        "topic6": [], 
+        "topic7": ["q19atyp1r", "q19afld1r"], 
+        "topic8": ["Q2CLASSN", "pmajipeds", "q8graduate"]
+    },
+
+    "stop_word_list" : ["a", "a n", "t h e", "a n d", "b u t", "i f", "o r", "a s", "o f", "a t", "by", "f o r", "w i t h", "a b o u t", 
+            "i n t o", "t o", "from", "u p", "i n", "out", "o n", "t h e n", "s", "t", "[ P A D ]", "[ S E P ]", "[S T A R T]", "[U N K]", "[C L S]",
+             ",", ".", "'", "[ C L S ]", ")", "("]
+}
+
+  
+
